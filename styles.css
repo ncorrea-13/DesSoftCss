@@ -1,0 +1,187 @@
+header {
+    background-color: rgb(70, 67, 67);
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px 10% 20px 10%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+
+h3 {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+hr {
+    background-color: black;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.styleP {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-decoration-color: black;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+blockquote {
+    font-size: 12px;
+    font-style: italic;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    background-color: #eaeaea;
+    border-left: 5px solid #777676;
+    border-radius: 5px;
+    height: 25px;
+    color: #444343;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.cajaSimple {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px gray;
+    padding-left: 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.cajaDestacada {
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px gray;
+    background-color: rgb(255, 228, 192);
+    padding-left: 10px;
+    margin: 10px 10px 10px 10px;
+    font-size: 12;
+}
+
+.cajaPosRelativa {
+    background-color: aquamarine;
+    position: relative;
+    margin: 10px 10px 10px 10px;
+    padding-left: 10px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    font-size: 12;
+
+}
+
+.cajaPosAbsoluta {
+    display: flex;
+    background-color: rgb(74, 156, 129);
+    color: white;
+    position: absolute;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    left: 50%;
+    top: 63%;
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: bisque;
+    }
+
+    header h1 {
+        color: white;
+        font-size: 14px;
+    }
+}
+
+.gridContenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.elemento {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(84, 137, 235);
+    color: white;
+    border-radius: 10px;
+}
+
+.colorear {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 10px 10px;
+    background-color: rgb(255, 0, 0);
+    transition: color 1s;
+    cursor: pointer;
+}
+
+.colorear:hover {
+    background-color: darkcyan;
+}
+
+.movimiento {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgb(0, 133, 18);
+    margin: 0px 10px 10px 10px;
+    animation: movimiento 2s infinite;
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(300px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
